@@ -1,0 +1,27 @@
+%YAML 1.1
+---
+actions:
+- action_book_search
+- action_price_search
+- action_content_search
+- utter_greet
+- utter_noproblem
+entities:
+- info
+- book
+intents:
+- search
+- greet
+- thanks
+- inquire_content
+- inquire_price
+slots:
+  info:
+    type: unfeaturized
+  book:
+    type: unfeaturized
+templates:
+  utter_greet:
+  - text: 안녕 반가워! 검색어를 입력해봐!
+  utter_noproblem:
+  - text: 또 궁금한게 있으면 물어봐!
